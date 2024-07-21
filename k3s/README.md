@@ -6,6 +6,7 @@
 4. Configure Storage with LongHorn or ceph for Distribute storage
     https://ceph.io/en/ 
     https://longhorn.io/
+5. add san for the kubectl master (or LB) for the kubectl connect as remotly
 
 ## Deploy HA k3s with External DataStore
     
@@ -27,3 +28,5 @@
     3. Repo for Deployments - https://github.com/IsraelDavidDahan85/deployments-node-app
 
 ## CD for apps
+    1. ArgoApp
+    2. deploy the charts.
