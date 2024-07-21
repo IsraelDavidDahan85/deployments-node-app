@@ -17,19 +17,19 @@ compactor:
     compacted_block_retention: 10m
     flush_size_bytes: 5242880 
 
-storage:
-  trace:
-    backend: s3
-    s3:
-      access_key: 'minio'
-      secret_key: 'minio123'
-      bucket: 'tempo'
-      endpoint: 'poweredge.mazor.medtronic.com:30009'
-      insecure: false
-      tls_insecure_skip_verify: true
+# storage:
+#   trace:
+#     backend: s3
+#     s3:
+#       access_key: 'minio'
+#       secret_key: 'minio123'
+#       bucket: 'tempo'
+#       endpoint: 'poweredge.mazor.medtronic.com:30009'
+#       insecure: false
+#       tls_insecure_skip_verify: true
 
-# minio:
-#   enabled: false
+minio:
+  enabled: false
 
 traces:
   otlp:

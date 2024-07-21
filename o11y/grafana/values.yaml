@@ -268,7 +268,7 @@ ingress:
   pathType: Prefix
 
   hosts:
-    - poweredge.mazor.medtronic.com
+    - localhost
   ## Extra paths to prepend to every host configuration. This is useful when working with annotation based services.
   extraPaths: []
   # - path: /*
@@ -285,10 +285,10 @@ ingress:
   #         name: use-annotation
 
 
-  tls: 
-    - secretName: k3s-tls
-      hosts:
-        - poweredge.mazor.medtronic.com
+  tls: []
+    # - secretName: k3s-tls
+    #   hosts:
+    #     - poweredge.mazor.medtronic.com
 
 resources: {}
 #  limits:
@@ -864,7 +864,7 @@ sidecar:
     seccompProfile:
       type: RuntimeDefault
   # skipTlsVerify Set to true to skip tls verification for kube api calls
-  # skipTlsVerify: true
+  skipTlsVerify: true
   enableUniqueFilenames: false
   readinessProbe: {}
   livenessProbe: {}

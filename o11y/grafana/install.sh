@@ -1,6 +1,6 @@
 ### key and cert is from the certificate issued by the MDT CA 
 #copy the tls.key and tls.crt to the current directory
-kubectl create secret tls k3s-tls --key tls.key --cert tls.crt -n o11y
+# kubectl create secret tls k3s-tls --key tls.key --cert tls.crt -n o11y
 
 
 helm repo add grafana https://grafana.github.io/helm-charts

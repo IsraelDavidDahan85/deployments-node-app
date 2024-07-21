@@ -13,7 +13,7 @@ stringData:
           type: prometheus
           access: proxy
           orgId: 1
-          url: http://prometheus-server.o11y.svc.cluster.local/o11y/prometheus/
+          url: http://prometheus-server.o11y.svc.cluster.local/prometheus/
         - name: loki
           access: proxy
           type: loki
