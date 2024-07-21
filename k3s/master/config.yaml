@@ -1,0 +1,6 @@
+write-kubeconfig-mode: "0644"
+token: "k3s-test"
+tls-san:
+  - "localhost"
+cluster-init: true
+disable: traefik

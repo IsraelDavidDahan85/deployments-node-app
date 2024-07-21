@@ -1,0 +1,1 @@
+helm upgrade --install node-api . --namespace node-api --create-namespace
