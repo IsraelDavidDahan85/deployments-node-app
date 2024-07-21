@@ -11,6 +11,7 @@
 ## Deploy HA k3s with External DataStore
     
 1. https://www.suse.com/c/rancher_blog/deploying_ha_k3s_external_database/    
+![Architecture](https://docs.k3s.io/img/k3s-architecture-ha-external.svg)
 
 ## Create New Role for Users
 
@@ -28,5 +29,5 @@
     3. Repo for Deployments - https://github.com/IsraelDavidDahan85/deployments-node-app
 
 ## CD for apps
-    1. ArgoApp
-    2. deploy the charts.
+
+ArgoApp or deploy the charts.
