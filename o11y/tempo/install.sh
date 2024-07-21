@@ -1,0 +1,1 @@
+helm -n o11y install tempo grafana/tempo -f values.yaml

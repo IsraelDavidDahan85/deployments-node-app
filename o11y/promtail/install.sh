@@ -1,0 +1,1 @@
+helm upgrade --install promtail -n o11y -f values.yaml grafana/promtail

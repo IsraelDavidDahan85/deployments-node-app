@@ -1,0 +1,46 @@
+distributor:
+  receivers:
+    otlp:
+      protocols:
+        grpc:
+
+ingester:
+  trace_idle_period: 10s  
+  max_block_bytes: 1_000_000  
+  max_block_duration: 1m  
+
+compactor:
+  compaction:
+    compaction_window: 1h             
+    max_compaction_objects: 1000000   
+    block_retention: 1h
+    compacted_block_retention: 10m
+    flush_size_bytes: 5242880 
+
+storage:
+  trace:
+    backend: s3
+    s3:
+      access_key: 'minio'
+      secret_key: 'minio123'
+      bucket: 'tempo'
+      endpoint: 'poweredge.mazor.medtronic.com:30009'
+      insecure: false
+      tls_insecure_skip_verify: true
+
+# minio:
+#   enabled: false
+
+traces:
+  otlp:
+    grpc:
+      enabled: true
+    http:
+      enabled: true
+  zipkin:
+    enabled: false
+  jaeger:
+    thriftHttp:
+      enabled: false
+  opencensus:
+    enabled: false

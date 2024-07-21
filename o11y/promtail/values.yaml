@@ -1,0 +1,7 @@
+config:
+  clients:
+    - url: http://loki-gateway.o11y.svc.cluster.local/loki/api/v1/push
+      tenant_id: 1
+      basic_auth:
+        username: admin
+        password: admin
