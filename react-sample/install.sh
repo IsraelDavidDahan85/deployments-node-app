@@ -1,0 +1,1 @@
+helm upgrade --install react-sample . --namespace react-sample --create-namespace

@@ -16,8 +16,7 @@
 ## Create New Role for Users
 
 ## Deploy NGINX Ingress Controller 
-    1. kubectl create ns nginx-ingress
-    2. kubectl apply -f nginx-controller/deployment-nginx.yml
+    1. https://docs.nginx.com/nginx-ingress-controller/installation/installing-nic/installation-with-manifests/
 
 ## Deploy Postgres on K3s
     1. Operator https://github.com/zalando/postgres-operator/tree/master
@@ -25,6 +24,7 @@
 
 ## CI for apps
     1. repo for api - https://github.com/IsraelDavidDahan85/node-api
+    helm install node-api ./node-api/ -n backend --create-namespace
     2. Repo for React app - https://github.com/IsraelDavidDahan85/react-sample
     3. Repo for Deployments - https://github.com/IsraelDavidDahan85/deployments-node-app
 

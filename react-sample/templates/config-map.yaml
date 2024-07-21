@@ -1,10 +1,11 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: {{ .Release.Name }}-configmap
+  name: config-configmap
   labels:
-    app: {{ .Release.Name }}
-data: |-
+    app: {{ include "react-sample.fullname" . }}
+data: 
+  default.json: |
     {
-      "BACKEND_URL": "http://localhost:3000"
+      "BACKEND_URL": "http://localhost/node-api"
     }
